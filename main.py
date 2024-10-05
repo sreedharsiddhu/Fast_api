@@ -32,7 +32,7 @@ def create_todo(todo: TodoItem):
         raise HTTPException(status_code=400, detail="Title and description cannot be empty")
     return {"message": todo.dict()}
 
-# Define the Pydantic model for a ToDo item
+# Define the Pydantic model
 class chicken_biryani(BaseModel):
     bir_type: int
 
